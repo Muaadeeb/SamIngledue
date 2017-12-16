@@ -33,6 +33,7 @@ window.onload = () => {
             rehalRodian = new opponent("Rehal", "Madar", 10, 5, 10);
             getBountyHunterData();
 
+
             document.getElementById("firstName").innerHTML = rehalRodian["firstName"].toString();
             document.getElementById("lastName").innerHTML = rehalRodian["lastName"].toString();
             document.getElementById("combatOffense").innerHTML = rehalRodian["combatOffense"].toString();
