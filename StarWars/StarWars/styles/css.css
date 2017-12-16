@@ -1,0 +1,53 @@
+﻿body {
+    background-color: burlywood;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+div, input {
+    /*white-space: pre;*/
+    display: block;
+}
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.centerText {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.margintop {
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 2px 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+tr:nth-child(even) {
+    background-color: silver;
+}
+
+th {
+    background-color: silver;
+}
