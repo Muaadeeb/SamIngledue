@@ -34,6 +34,7 @@ window.onload = () => {
             getBountyHunterData();
 
 
+
             document.getElementById("firstName").innerHTML = rehalRodian["firstName"].toString();
             document.getElementById("lastName").innerHTML = rehalRodian["lastName"].toString();
             document.getElementById("combatOffense").innerHTML = rehalRodian["combatOffense"].toString();
