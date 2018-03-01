@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,7 +70,14 @@
   <ItemGroup>
     <Content Include="bar1.html" />
     <Content Include="gameOver.html" />
+    <Content Include="images\DarudeSandStorm.jpg" />
+    <Content Include="images\rat1.jpg" />
+    <Content Include="images\rat2.jpg" />
+    <Content Include="images\rat3.jpg" />
+    <Content Include="images\rat4.jpg" />
     <Content Include="packages.config" />
+    <Content Include="ratCave.html" />
+    <Content Include="ratCave1.html" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -32,3 +32,38 @@ C:\Users\Samuel\documents\visual studio 2017\Projects\StarWars\StarWars\bin\Micr
 C:\Users\Samuel\documents\visual studio 2017\Projects\StarWars\StarWars\obj\Debug\StarWars.dll
 C:\Users\Samuel\documents\visual studio 2017\Projects\StarWars\StarWars\obj\Debug\StarWars.pdb
 C:\Users\Samuel\documents\visual studio 2017\Projects\StarWars\StarWars\obj\Debug\StarWars.csprojResolveAssemblyReference.cache
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\csc.exe
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\csc.exe.config
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\csc.rsp
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\csi.exe
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\csi.rsp
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\System.AppContext.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\System.Collections.Immutable.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\System.IO.FileSystem.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\System.Reflection.Metadata.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\vbc.exe
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\vbc.exe.config
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\vbc.rsp
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\VBCSCompiler.exe
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\roslyn\VBCSCompiler.exe.config
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\StarWars.dll.config
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\StarWars.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\StarWars.pdb
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\obj\Debug\StarWars.csproj.CoreCompileInputs.cache
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\obj\Debug\StarWars.dll
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\obj\Debug\StarWars.pdb
+C:\MastersWeb\SamIngledue\SamIngledue\StarWars\StarWars\obj\Debug\StarWars.csprojResolveAssemblyReference.cache

@@ -1,4 +1,6 @@
-var weapons = [["Weapon", "Range", "Min Damage", "Max Damage", "Weight", "Attack Modifier", "Rate of Fire", "Cost"], ["Blaster Pistol", "Short", 1, 8, 5, 0, 2, 300], ["Blaster Rifle", "Medium", 1, 10, 8, 5, 2, 650], ["Blaster Sniper", "Long", 3, 18, 10, 10, 1, 1200], ["Vibro Blade", "Melee", 1, 6, 3, 0, 1, 50], ["Throwing Knife", "Short", 1, 4, 1, 0, 1, 25]];
+var weapons = [["Weapon", "Range", "Min Damage", "Max Damage", "Weight", "Attack Modifier", "Rate of Fire", "Cost"],
+    ["Blaster Pistol", "Short", 1, 8, 5, 0, 2, 300], ["Blaster Rifle", "Medium", 1, 10, 8, 5, 2, 650],
+    ["Blaster Sniper", "Long", 3, 18, 10, 10, 1, 1200], ["Vibro Blade", "Melee", 1, 6, 3, 0, 1, 50], ["Throwing Knife", "Short", 1, 4, 1, 0, 1, 25]];
 var armor = [["Light", 10, 1, 50, 120], ["Medium", 25, 3, 100, 375], ["Heavy", 75, 5, 150, 1200]];
 var items = [["To Be Determined - Item 1", 0], ["To Be Determined - Item 2", 0]];
 var bountyHunter = new BountyHunter(null, null, null, null, null, null, null, null, null);
@@ -9,6 +11,10 @@ var itemsInventory = [];
 var equipedWeapon = [];
 var money = 0;
 var rehalRodian = [];
+var rat1 = [];
+var rat2 = [];
+var rat3 = [];
+var rat4 = [];
 var weaponAttackBonus = 0;
 var weaponRateOfFire = 0;
 var bhOffenseTotal = 0;
@@ -28,12 +34,39 @@ window.onload = function () {
             break;
         case "rodianYes1.html":
             rehalRodian = new opponent("Rehal", "Madar", 10, 5, 10);
-            getBountyHunterData();
+            getBountyHunterData(rehalRodian);
             document.getElementById("firstName").innerHTML = rehalRodian["firstName"].toString();
             document.getElementById("lastName").innerHTML = rehalRodian["lastName"].toString();
             document.getElementById("combatOffense").innerHTML = rehalRodian["combatOffense"].toString();
             document.getElementById("combatDefense").innerHTML = rehalRodian["combatDefense"].toString();
             document.getElementById("health").innerHTML = rehalRodian["health"].toString();
+            break;
+        case "ratCave1.html":
+            rat1 = new opponent("Rat", "Sandwich", 5, 5, 5);
+            rat2 = new opponent("Rat", "Sandwich", 5, 5, 5);
+            rat3 = new opponent("Rat", "Sandwich", 5, 5, 5);
+            rat4 = new opponent("Rat", "Sandwich", 5, 5, 5);
+            getBountyHunterData(rat1);
+            document.getElementById("firstName1").innerHTML = rat1["firstName"].toString();
+            document.getElementById("lastName1").innerHTML = rat1["lastName"].toString();
+            document.getElementById("combatOffense1").innerHTML = rat1["combatOffense"].toString();
+            document.getElementById("combatDefense1").innerHTML = rat1["combatDefense"].toString();
+            document.getElementById("health1").innerHTML = rat1["health"].toString();
+            document.getElementById("firstName2").innerHTML = rat2["firstName"].toString();
+            document.getElementById("lastName2").innerHTML = rat2["lastName"].toString();
+            document.getElementById("combatOffense2").innerHTML = rat2["combatOffense"].toString();
+            document.getElementById("combatDefense2").innerHTML = rat2["combatDefense"].toString();
+            document.getElementById("health2").innerHTML = rat2["health"].toString();
+            document.getElementById("firstName3").innerHTML = rat3["firstName"].toString();
+            document.getElementById("lastName3").innerHTML = rat3["lastName"].toString();
+            document.getElementById("combatOffense3").innerHTML = rat3["combatOffense"].toString();
+            document.getElementById("combatDefense3").innerHTML = rat3["combatDefense"].toString();
+            document.getElementById("health3").innerHTML = rat3["health"].toString();
+            document.getElementById("firstName4").innerHTML = rat4["firstName"].toString();
+            document.getElementById("lastName4").innerHTML = rat4["lastName"].toString();
+            document.getElementById("combatOffense4").innerHTML = rat4["combatOffense"].toString();
+            document.getElementById("combatDefense4").innerHTML = rat4["combatDefense"].toString();
+            document.getElementById("health4").innerHTML = rat4["health"].toString();
             break;
         default:
             break;
@@ -164,38 +197,40 @@ var loadWeapons = function () {
         }
     }
 };
-var getBountyHunterData = function () {
+var getBountyHunterData = function (opponent) {
     createBountyHunter();
     getBountyHunterWeaponInfo(bountyHunter.equipWeapon);
     damage = getRandomInt(bountyHunterWeapon.minDamage, bountyHunterWeapon.maxDamage);
     var toHitMod = getRandomInt(1, 10);
-    bhOffenseTotal = bountyHunter.combatOffense + toHitMod + bountyHunterWeapon.toHitModifier - rehalRodian["combatDefense"];
-    bhDefenseTotal = bountyHunter.combatDefense - rehalRodian["combatOffense"] - getRandomInt(1, 20);
+    bhOffenseTotal = bountyHunter.combatOffense + toHitMod + bountyHunterWeapon.toHitModifier - opponent["combatDefense"];
+    bhDefenseTotal = bountyHunter.combatDefense - opponent["combatOffense"] - getRandomInt(1, 20);
     document.getElementById("bhHitChance").innerHTML = bhOffenseTotal.toString();
     document.getElementById("bhGetHitChance").innerHTML = bhDefenseTotal.toString();
     document.getElementById("bhFirstName").innerHTML = bountyHunter.firstName;
     document.getElementById("bhLastName").innerHTML = bountyHunter.lastName;
     document.getElementById("bhHealth").innerHTML = bountyHunter.health.toString();
 };
-var attack = function () {
-    if (bhDefenseTotal <= 0) {
-        bountyHunter.health += bhDefenseTotal;
-    }
+var attack = function (opponent, number) {
+    //for (number = 0; number <= 0; number++) {
+    //    if (bhDefenseTotal <= 0) {
+    //        bountyHunter.health += bhDefenseTotal;
+    //    }
+    //}
     document.getElementById("bhHealth").innerHTML = bountyHunter.health;
-    document.getElementById("health").innerHTML = rehalRodian["health"];
+    document.getElementById("health").innerHTML = opponent["health"];
     if (bountyHunter.health < 0) {
         window.location.href = "gameOver.html";
     }
-    if (rehalRodian["health"] < 0 && bountyHunter.health >= 0) {
+    if (opponent["health"] < 0 && bountyHunter.health >= 0) {
         window.location.href = "bar1.html";
         money = parseInt(sessionStorage.getItem("money"));
         money = money + 800;
         sessionStorage.setItem("money", money.toString());
     }
     if (bhOffenseTotal > 0) {
-        rehalRodian["health"] -= damage;
+        opponent["health"] -= damage;
         var toHitMod = getRandomInt(1, 10);
-        bhOffenseTotal = bountyHunter.combatOffense + toHitMod + bountyHunterWeapon.toHitModifier - rehalRodian["combatDefense"];
+        bhOffenseTotal = bountyHunter.combatOffense + toHitMod + bountyHunterWeapon.toHitModifier - opponent["combatDefense"];
         document.getElementById("bhHitChance").innerHTML = bhOffenseTotal.toString();
         return bhOffenseTotal;
     }
@@ -227,6 +262,12 @@ var rodianYes = function () {
 };
 var rodianNo = function () {
     window.location.href = "rodianNo.html";
+};
+var ratCave = function () {
+    window.location.href = "ratCave.html";
+};
+var ratCave1 = function () {
+    window.location.href = "ratCave1.html";
 };
 var rodianNo1 = function () {
     window.location.href = "rodianNo1.html";
