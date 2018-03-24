@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="content/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/Combat.js"></script>
+    <script src="scripts/Navigation.js"></script>
+    <script src="scripts/bountyHunter.js"></script>
+    <link href="styles/css.css" rel="stylesheet" />
+</head>
+<body>
+    <img src="images/rodianYes.jpeg" style="float:left;" />
+    <p style="margin-top: 5px;"><strong> Name:</strong></p><p id="firstName"></p>
+    <p style="margin-top: 5px;"><strong>Last Name:</strong></p><p id="lastName"></p>
+    <p style="margin-top: 5px;"><strong>Health:</strong></p><p id="health"></p>
+    <p style="margin-top: 5px;"><strong>Attack:</strong></p><p id="combatOffense"></p>
+    <p style="margin-top: 5px;"><strong>Defense:</strong></p><p id="combatDefense"></p>
+    <br /><br />
+    <table>
+        <thead>
+            <tr style="font-weight:bold">
+                <th>First Name</th>
+                <th>First Name</th>
+                <th>Health</th>
+                <th>Hit Chance</th>
+                <th>Get Hit Chance</th>
+                <th>Damage Range</th>
+             </tr>
+        </thead>
+        <tr>
+            <td id="bhFirstName"></td>
+            <td id="bhLastName"></td>
+            <td id="bhHealth"></td>
+            <td id="bhHitChance"></td>
+            <td id="bhGetHitChance"></td>
+            <td id="damageRange"></td>
+           </tr>
+       
+    </table>
+
+    <input class="margintop" type="button" value="Attack" onclick="attack(rehalRodian, 1)" />
+</body>
+</html>
