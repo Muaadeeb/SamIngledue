@@ -20,10 +20,6 @@ let ratCave = () => {
 let ratCave1 = () => {
     window.location.href = "ratCave1.html";
 }
-let rodianNo1 = () => {
-    window.location.href = "rodianNo1.html";  
-};
-
 let calcToHit = function (attackerOffense, attackerLuck, defenderDefense, defenderLuck) {
     let playerAdjustment = favorPlayer();
     let value = valueAdjustment();

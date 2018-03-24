@@ -51,8 +51,9 @@ let saveEquipedGear = () => {
 
 let savePurchasedGear = () => {
     sessionStorage.setItem("weaponInventory", JSON.stringify(weaponInventory));
-    window.location.href = "bhEquipGear.html";
     sessionStorage.setItem("money", money.toString());
+    window.location.href = "bhEquipGear.html";
+    
 };
 
 let buyWeapon = function (weapon) {

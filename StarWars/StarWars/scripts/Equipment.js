@@ -46,8 +46,8 @@ var saveEquipedGear = function () {
 };
 var savePurchasedGear = function () {
     sessionStorage.setItem("weaponInventory", JSON.stringify(weaponInventory));
-    window.location.href = "bhEquipGear.html";
     sessionStorage.setItem("money", money.toString());
+    window.location.href = "bhEquipGear.html";
 };
 var buyWeapon = function (weapon) {
     for (var i = 0; i <= weapons.length; i++) {
